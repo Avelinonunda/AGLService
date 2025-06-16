@@ -1,14 +1,410 @@
-/*
-Mobile (até 767px)
-
-Tablet (768px a 1024px)
-
-PC (acima de 1024px)
-*/
-
 *{
-        margin: 0;
-        padding: 0;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+font-family:'FontSobre' ;
+src: url(../Font/TTF/Satoshi-Variable.ttf);
+}
+a{
+text-decoration: none;
+}
+ul{
+list-style: none;
+}
+hr{
+margin: 0 auto;
+}
+body{
+background-color:rgb(226, 230, 233);
+overflow-x: hidden;
+}
+header{
+height: 9%;
+background-image: url('../img/');
+background-size: cover;
+background-position: center;
+background-color: black;
+border-radius: 0 0 150PX 0;
+display: flex;
+}
+.logo img{
+position: relative;
+top: -40px;
+border-radius: 100px;
+width: 150px;
+}
+.mobille-menu{
+display: none;
+position: relative;
+left: 185px;
+top: 20px;
+height: 27px;
+width: 36px;
+cursor: pointer
+}
+.mobille-menu div{
+color: white;
+width: 30px;
+height: 3px;
+margin: 4px;
+background-color: white;
+}
+.nav-list{
+display: inline;
+position: absolute;
+left: 485px;
+height: 80vh;
+border-radius: 830px 0 0 0;
+
+}
+.nav-list ul{
+position: relative;
+top: -40px;
+display: none;
+margin-top:15px ;
+}
+.nav-list li{
+display: inline;
+position: relative;
+top: 50px;
+left: 60px;
+width: 80px;
+margin: 10px;
+margin-bottom: 60px;
+}
+.nav-list li:hover{
+border-bottom: 1px solid darkgoldenrod;
+padding-bottom: 3px;
+}
+.nav-list a:hover{
+color: #ccc;
+}
+.nav-list a{
+color: white;
+}
+.img-princip{
+height: 75vh;
+background-image: url('../img/meninaServico.jpg'); 
+height: 90vh;
+background-size: cover;
+background-position: center ;
+background-repeat: no-repeat;
+}
+.sect-conteudo{
+background-color:  rgb(226, 230, 233);
+width: 80%;
+margin: 0 auto;
+padding: 20px;
+margin-bottom: -15px;
+}
+.conteudo{
+margin-top: 20px;
+text-align: center;
+margin: 0 auto;
+}
+.conteudo h1{
+text-align: center;
+margin-bottom: 5px;
+}
+.conteudo hr{
+width: 180px;
+height: 3px;
+background-color: rgb(228, 140, 32);
+border: none;
+margin:0 auto;
+margin-bottom: 15px;
+}
+.caixas-servicos{
+display: flex;
+gap: 16px;
+width: 100%;
+flex-wrap: wrap;
+}
+.caixa-servicos{
+display: inline-block;
+width: 40%;
+padding: 5px;
+background-color: white; 
+}
+.caixa-servicos, .caixa-publico{
+
+margin: 0 auto;
+font-size: 13px;
+margin-bottom: 15px;
+}
+.caixa-servicos h1{
+margin-top: 20px;
+color: darkgoldenrod;
+}
+.caixa-servicos img, .caixa-publico img{
+margin-top: 4px;
+margin-bottom: -5px;
+height: 30px;
+width: 40px;
+}
+.caixa-servicos p, .caixa-publico p{
+padding: 5px;
+max-width: 95%;
+text-align: center;
+font-size: 18px;
+}
+.publico-alvo{
+background-color: black;
+color: white;
+padding-bottom: 30px;
+text-align: center;    
+}
+.publico-alvo h1{
+text-align: center;
+padding-top: 15px;
+
+}
+.publico-alvo p{
+width: 400px;
+text-align: center;
+margin:auto;
+margin-top: 10px; 
+margin-bottom: 10px;
+}
+.publico-alvo hr{
+width: 200px;
+height: 3px;
+background-color: rgb(228, 140, 32);
+border: none;
+margin: 0 auto;
+margin-top: 5px;
+
+}
+.caixas-publico{
+display: inline-block;
+gap: 16px;
+margin: 0 auto;
+flex-wrap: wrap;
+text-align: center;
+box-sizing: border-box;
+}
+.caixa-publico{
+align-items: stretch;
+}
+.caixa-publico{
+display: inline-block;
+height: 30%;
+width: 33%;
+margin: 15px;
+max-height: 200px;
+margin-left: 13px;
+background-color: rgba(228, 140, 32, 0.699);
+}
+.caixa-publico p{    
+color: white;
+letter-spacing: 1px;
+}
+.caixa-publico h1{
+margin-top: 5px;
+color: black;
+}
+.principio{
+background-color: black;
+height: 300px;
+margin-top: 25px;
+
+}
+.fundo-principio{
+text-align: center;
+background-color: rgba(228, 140, 32, 0.699);
+height: 100%;
+}
+.item-principios{
+display: inline-block;
+background-color: black;
+width: 40%;
+height: 160px;
+margin-top: 40px;
+}
+.fundo-principio h1{
+padding-top: 30px;
+}
+.fundo-principio hr{
+width: 120px;
+height: 2px;
+background-color: white;
+margin-top: 5px;
+margin-bottom: 10px;
+}
+.nav-list.active{
+transform: translatex(-160px);
+}
+.slider-container {
+position: relative;
+width: 300px;
+height: 180px;
+overflow: hidden;
+border: 1px solid #ccc;
+border-radius: 10px;
+margin:0 auto;
+background-color: black;
+color: white;
+}
+.slider-container h1{
+color: darkgoldenrod;
+}
+.slide {
+display: none;
+position: absolute;
+width: 100%;
+height: 100%;
+padding: 20px;
+box-sizing: border-box;
+}
+.active {
+display: block;
+}
+.dots {
+margin-top: 20px;
+display: flex;
+justify-content: center;
+gap: 10px;
+}
+.dot {
+width: 15px;
+height: 15px;
+background-color: black;
+border-radius: 50%;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+.dot.active {
+background-color: white;
+}
+/*SOBRE*/
+.sobre-contain{
+text-align: center;
+background-color: white;
+border-radius: 0 130px 0px 0px;
+padding-bottom: 35px;
+}
+.apresentação{
+
+margin: 0 auto;
+}
+.sobre-contain h1{
+padding-top: 30px;
+margin-bottom: 15px;  
+}
+.sobre-contain div h1{
+padding: 0px;
+margin: auto;
+color: darkgoldenrod;
+font-family: 'FontSobre';
+margin-left: 30px;
+}
+.sobre-contain img{
+width: 500px;
+border-radius: 100px 0px 50px 0px;
+margin-bottom: 20px;
+margin-left: -45%;
+}
+.apresentação img ~ p{
+position: relative;
+top: -40vh;
+left: 53% !important;
+margin: 0;
+max-width: 45%;
+}
+.sobre-contain p{
+max-width: 400px;
+margin: auto;
+font-weight: 500;
+font-family: 'FontSobre';
+letter-spacing: 1px;
+}
+footer{
+margin-top: 20px;
+background-color: black;
+color: white;        
+}
+span img{
+cursor: pointer;
+}
+.contactos h1{
+padding-top: 10px;
+padding-left: 10px;
+margin-bottom: 10px;
+font-size: 25px;
+}
+.contactos a img{
+width: 35px;
+}
+.contactos a{
+color: white;
+font-size: 14px;
+margin: 15px;
+}
+.contactos a span{
+position: relative;
+left: 5px;
+bottom: 14px;
+}
+.copy{
+text-align: center;
+}
+/*TABLET*/
+@media (min-width: 600px) and (max-width: 1024px){
+.nav-list li{
+    display: inline;
+    position: relative;
+    top: 50px;
+    left: -22%;
+    margin-left: -1px !important;
+}
+.nav-list ul {
+    display: block;
+    background-color: black;
+}
+.sobre-contain{
+    background-color: white;
+    border-radius: 0 130px 0px 0px;
+    padding-bottom: 35px;
+}
+.apresentação{
+    margin: 0 auto;
+}
+.sobre-contain h1{
+    padding-top: 30px;
+    margin-bottom: 15px;
+}
+.sobre-contain div h1{
+    padding: 0px;
+    color: darkgoldenrod;
+    font-family: 'FontSobre';
+    margin-left: 30px;
+}
+.sobre-contain img{
+    width: 400px;
+    border-radius: 100px 0px 50px 0px;
+    margin-bottom: 20px;
+    margin-left: -45%;
+}
+.apresentação img ~ p{
+    position: relative;
+    top: -40vh;
+    left: 54% !important;
+    max-width: 45%;
+}
+.sobre-contain p{
+    max-width: 400px;
+    margin: 0 auto;
+    font-weight: 500;
+    font-family: 'FontSobre';
+    letter-spacing: 1px;
+}
+}
+/*Mobile*/
+@media (max-width:768px) {
+*{
+    margin: 0;
+    padding: 0;
 }
 @font-face {
     font-family:'FontSobre' ;
@@ -21,8 +417,8 @@ ul{
     list-style: none;
 }
 body{
-    background-color:rgb(226, 230, 233);
-    overflow-x: hidden;
+    background-color: rgb(226, 230, 233);
+    
 }
 header{
     height: 9%;
@@ -40,9 +436,9 @@ header{
     width: 150px;
 }
 .mobille-menu{
-    display: none;
+    display: block;
     position: relative;
-    left: 185px;
+    left: 44vw;
     top: 20px;
     height: 27px;
     width: 36px;
@@ -56,10 +452,9 @@ header{
     background-color: white;
 }
 .nav-list{
-    display: none;
     position: absolute;
     top: 10px;
-    left: 485px;
+    left: 100%;
     background-color: black;
     height: 80vh;
     width: 180px;
@@ -67,7 +462,6 @@ header{
     
 }
 .nav-list ul{
-    display: block;
     position: relative;
     top: -40px;
     display: none;
@@ -75,6 +469,7 @@ header{
 
 }
 .nav-list li{
+    display: block;
     position: relative;
     top: 150px;
     left: 60px;
@@ -84,54 +479,53 @@ header{
 
 .nav-list a{
     color: white;
-    
     margin-left: 10px;
-    
 }
 .img-princip{
+    background-color: red;
     height: 75vh;
     background-image: url('../img/meninaServico.jpg'); 
-    height: 90vh;
+    z-index: 1;
     background-size: cover;
-    background-position: center ;
-    background-repeat: no-repeat;
 }
 .sect-conteudo{
-    background-color:  rgb(226, 230, 233);
-    width: 80%;
-    margin: auto;
-    padding: 20px;
-    margin-bottom: -15px;
+    width: 100%;
 }
 .conteudo{
     margin-top: 20px;
-    text-align: center;
 }
 .conteudo h1{
     text-align: center;
     margin-bottom: 5px;
-    
 }
+/*
 .conteudo hr{
+    text-align: center;
     position: relative;
-    left: 42%;
+    left: 35%;
     width: 180px;
     height: 3px;
     background-color: rgb(228, 140, 32);
     border: none;
     margin-bottom: 15px;
+}*/
+.caixas-servicos{
+    display: flex;
+    gap: 16px;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: stretch;
 }
-
 .caixa-servicos{
-    text-align: center;
-    display: inline-block;
-    height: 160px;
+    width: 40%;
+    font-size: 11px;
     margin: 5px;
     margin-left: 13px;
+    padding: 5px;
     background-color: white;
+    box-sizing: border-box;
 }
 .caixa-servicos, .caixa-publico{
-    width: 35%;
     font-size: 13px;
     margin-bottom: 15px;
 }
@@ -145,23 +539,45 @@ header{
     height: 30px;
     width: 40px;
 }
+
+.caixa-publico p{    
+    color: rgb(211, 209, 206);
+    font-size: 15px;
+    
+}
+.caixa-publico h1{
+    margin-top: 5px;
+    color: black;
+}
+.caixa-servicos p{
+    font-size: 14px;
+    
+}
 .caixa-servicos p, .caixa-publico p{
     padding: 5px;
     max-width: 95%;
     text-align: center;
-    font-size: 18px;
+    
 }
 .publico-alvo{
     background-color: black;
     color: white;
     padding-bottom: 30px;
-    text-align: center;
-    
+    width: 100%;
+    margin-left: -20px;
 }
 .publico-alvo h1{
     text-align: center;
     padding-top: 15px;
     
+}
+.publico-alvo hr{
+    width: 200px;
+    height: 3px;
+    background-color: rgb(228, 140, 32);
+    border: none;
+    margin: 0 auto;
+    margin-top: 5px;
 }
 .publico-alvo p{
     width: 400px;
@@ -170,43 +586,32 @@ header{
     margin-top: 10px; 
     margin-bottom: 10px;
 }
-.publico-alvo hr{
+.caixas-publico{
+    display: inline-block;
+    gap: 16px;
+    margin: 0 auto;
     text-align: center;
-    width: 18%;
-    height: 3px;
-    background-color: rgb(228, 140, 32);
-    border: none;
-    margin-top: 5px;
-    margin-left: 41%;
+    box-sizing: border-box;
 }
 .caixa-publico{
-    display: inline-block;
-    height: 160px;
-    width: 33%;
-    margin: 15px;
-    margin-left: 13px;
+   
+}
+.caixa-publico{        
+    width: 40%;
+    margin: 15px;        
     background-color: rgba(228, 140, 32, 0.699);
-}
-.caixa-publico p{    
-    color: white;
-    letter-spacing: 1px;
-    
-    
-}
-.caixa-publico h1{
-    margin-top: 5px;
-    color: black;
 }
 .principio{
     background-color: black;
     height: 300px;
     margin-top: 25px;
-    
+    margin-left: -20px;
 }
 .fundo-principio{
     text-align: center;
     background-color: rgba(228, 140, 32, 0.699);
     height: 100%;
+    margin-left: -20px;
 }
 .item-principios{
     display: inline-block;
@@ -215,20 +620,16 @@ header{
     height: 160px;
     margin-top: 40px;
 }
-.fundo-principio h1{
+.fundo-principio h1{ 
     padding-top: 30px;
 }
 .fundo-principio hr{
-    text-align: center;
-    width: 9%;
+    width: 120px;
     height: 2px;
     background-color: white;
-    margin-left: 490px;
+    margin: 0 auto;
     margin-top: 5px;
     margin-bottom: 10px;
-}
-.nav-list.active{
-    transform: translatex(-160px);
 }
 .slider-container {
     position: relative;
@@ -237,7 +638,7 @@ header{
     overflow: hidden;
     border: 1px solid #ccc;
     border-radius: 10px;
-    margin-left: 380px;
+    margin:0 auto ;
     background-color: black;
     color: white;
 }
@@ -252,14 +653,12 @@ header{
     padding: 20px;
     box-sizing: border-box;
 }
-.active {
-    display: block;
-}
 .dots {
     margin-top: 20px;
     display: flex;
     justify-content: center;
     gap: 10px;
+    text-align: center;
 }
 .dot {
     width: 15px;
@@ -272,21 +671,31 @@ header{
 .dot.active {
     background-color: white;
 }
+.nav-list.active{
+    transform: translatex(-160px);
+}
+.active {
+    display: block;
+}
 /*SOBRE*/
 .sobre-contain{
+    text-align: center;
+    margin: 0 auto;
     background-color: white;
     border-radius: 0 130px 0px 0px;
     padding-bottom: 35px;
 }
+.apresentação{
+    margin: 0 auto;
+}
 .sobre-contain h1{
     padding-top: 30px;
     margin-bottom: 15px;
-    margin-left: 220px;
     
+
 }
 .sobre-contain div h1{
     padding: 0px;
-    margin: auto;
     color: darkgoldenrod;
     font-family: 'FontSobre';
     margin-left: 30px;
@@ -297,9 +706,17 @@ header{
     margin-bottom: 20px;
     margin-left: 10px;
 }
+.apresentação img ~ p{
+    position: relative;
+    top: 0vh;
+    left: 0 !important;
+
+    max-width: 400px;
+    margin: auto;
+}
 .sobre-contain p{
     max-width: 400px;
-    margin-left: 20px;
+    margin: 0 auto;
     font-weight: 500;
     font-family: 'FontSobre';
     letter-spacing: 1px;
@@ -334,350 +751,23 @@ span img{
 .copy{
     text-align: center;
 }
-@media (max-width: 1024px){
-    
-}
-
-@media (max-width:768px) {
-    *{
-        margin: 0;
-        padding: 0;
-    }
-    @font-face {
-        font-family:'FontSobre' ;
-        src: url(../Font/TTF/Satoshi-Variable.ttf);
-    }
-    a{
-        text-decoration: none;
-    }
-    ul{
-        list-style: none;
-    }
-    body{
-        background-color: rgb(226, 230, 233);
-        
-    }
-    header{
-        height: 9%;
-        background-image: url('../img/');
-        background-size: cover;
-        background-position: center;
-        background-color: black;
-        border-radius: 0 0 150PX 0;
-        display: flex;
-    }
-    .logo img{
-        position: relative;
-        top: -40px;
-        border-radius: 100px;
-        width: 150px;
-    }
-    .mobille-menu{
-        display: block;
-        position: relative;
-        left: 185px;
-        top: 20px;
-        height: 27px;
-        width: 36px;
-        cursor: pointer
-    }
-    .mobille-menu div{
-        color: white;
-        width: 30px;
-        height: 3px;
-        margin: 4px;
-        background-color: white;
-    }
-    .nav-list{
-        position: absolute;
-        top: 10px;
-        left: 485px;
-        background-color: black;
-        height: 80vh;
-        width: 180px;
-        border-radius: 830px 0 0 0;
-        
-    }
-    .nav-list ul{
-        position: relative;
-        top: -40px;
-        display: none;
-        margin-top:15px ;
-
-    }
-    .nav-list li{
-        position: relative;
-        top: 150px;
-        left: 60px;
-        width: 80px;
-        margin-bottom: 60px;
-    }
-
-    .nav-list a{
-        color: white;
-        
-        margin-left: 10px;
-        
-    }
-    .img-princip{
-        background-color: red;
-        height: 75vh;
-        background-image: url('../img/meninaServico.jpg'); 
-        z-index: 1;
-        background-size: cover;
-    }
-    .sect-conteudo{
-        width: 100%;
-    }
-    .conteudo{
-        margin-top: 20px;
-    }
-    .conteudo h1{
-        text-align: center;
-        margin-bottom: 5px;
-        
-    }
-    .conteudo hr{
-        position: relative;
-        left: 150px;
-        width: 180px;
-        height: 3px;
-        background-color: rgb(228, 140, 32);
-        border: none;
-        margin-bottom: 15px;
-    }
-
-    .caixa-servicos{
-        text-align: center;
-        display: inline-block;
-        height: 160px;
-        width: 45%;
-        margin: 5px;
-        margin-left: 13px;
-        background-color: white;
-    }
-    .caixa-servicos, .caixa-publico{
-        max-width: 98%;
-        font-size: 13px;
-        margin-bottom: 15px;
-    }
-    .caixa-servicos h1{
-        margin-top: 20px;
-        color: darkgoldenrod;
-    }
-    .caixa-servicos img, .caixa-publico img{
-        margin-top: 4px;
-        margin-bottom: -5px;
-        height: 30px;
-        width: 40px;
-    }
-    .caixa-publico{
-        text-align: center;
-    }
-    .caixa-publico p{    
-        color: rgb(211, 209, 206);
-        font-size: 15px;
-        
-    }
-    .caixa-publico h1{
-        margin-top: 5px;
-        color: black;
-    }
-    .caixa-servicos p, .caixa-publico p{
-        padding: 5px;
-        max-width: 95%;
-        text-align: center;
-    }
-    .publico-alvo{
-        background-color: black;
-        color: white;
-        padding-bottom: 30px;
-        width: 100%;
-        margin-left: 0px;
-    }
-    .publico-alvo h1{
-        text-align: center;
-        padding-top: 15px;
-        
-    }
-    .publico-alvo p{
-        width: 400px;
-        text-align: center;
-        margin:auto;
-        margin-top: 10px; 
-        margin-bottom: 10px;
-    }
-    .caixa-publico{
-        display: inline-block;
-        height: 160px;
-        width: 45%;
-        margin: 5px;
-        margin-left: 13px;
-        background-color: rgba(228, 140, 32, 0.699);
-    }
-    .principio{
-        background-color: black;
-        height: 300px;
-        margin-top: 25px;
-    }
-    .fundo-principio{
-        text-align: center;
-        background-color: rgba(228, 140, 32, 0.699);
-        height: 100%;
-    }
-    .item-principios{
-        display: inline-block;
-        background-color: black;
-        width: 40%;
-        height: 160px;
-        margin-top: 40px;
-    }
-    .fundo-principio h1{
-    
-        padding-top: 30px;
-    }
-    .fundo-principio hr{
-        text-align: center;
-        width: 25%;
-        height: 2px;
-        background-color: white;
-        margin-left: 180px;
-        margin-top: 5px;
-        margin-bottom: 10px;
-    }
-    .publico-alvo hr{
-        text-align: center;
-        width: 45%;
-        height: 3px;
-        background-color: rgb(228, 140, 32);
-        border: none;
-        margin-top: 5px;
-        margin-left: 132px;
-    }
-    .nav-list.active{
-        transform: translatex(-160px);
-    }
-    .slider-container {
-        position: relative;
-        width: 300px;
-        height: 180px;
-        overflow: hidden;
-        border: 1px solid #ccc;
-        border-radius: 10px;
-        margin-left: 90px;
-        background-color: black;
-        color: white;
-    }
-    .slider-container h1{
-        color: darkgoldenrod;
-    }
-    .slide {
-        display: none;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        padding: 20px;
-        box-sizing: border-box;
-    }
-    .active {
-        display: block;
-    }
-    .dots {
-        margin-top: 20px;
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-    }
-    .dot {
-        width: 15px;
-        height: 15px;
-        background-color: black;
-        border-radius: 50%;
-        cursor: pointer;
-        transition: background-color 0.3s;
-    }
-    .dot.active {
-        background-color: white;
-    }
-    /*SOBRE*/
-    .sobre-contain{
-        background-color: white;
-        border-radius: 0 130px 0px 0px;
-        padding-bottom: 35px;
-    }
-    .sobre-contain h1{
-        padding-top: 30px;
-        margin-bottom: 15px;
-        margin-left: 220px;
-
-    }
-    .sobre-contain div h1{
-        padding: 0px;
-        margin: auto;
-        color: darkgoldenrod;
-        font-family: 'FontSobre';
-        margin-left: 30px;
-    }
-    .sobre-contain img{
-        width: 400px;
-        border-radius: 100px 0px 50px 0px;
-        margin-bottom: 20px;
-        margin-left: 10px;
-    }
-    .sobre-contain p{
-        max-width: 400px;
-        margin-left: 20px;
-        font-weight: 500;
-        font-family: 'FontSobre';
-        letter-spacing: 1px;
-    }
-    footer{
-        margin-top: 20px;
-        background-color: black;
-        color: white;        
-    }
-    span img{
-        cursor: pointer;
-    }
-    .contactos h1{
-        padding-top: 10px;
-        padding-left: 10px;
-        margin-bottom: 10px;
-        font-size: 25px;
-    }
-    .contactos a img{
-        width: 35px;
-    }
-    .contactos a{
-        color: white;
-        font-size: 14px;
-        margin: 15px;
-    }
-    .contactos a span{
-        position: relative;
-        left: 5px;
-        bottom: 14px;
-    }
-    .copy{
-        text-align: center;
-    }
 }
 @keyframes navLinkFade {
-    from{
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0);
-    }
+from{
+    opacity: 0;
+    transform: translateX(50px);
+}
+to{
+    opacity: 1;
+    transform: translateX(0);
+}
 }
 .mobille-menu.active .line1{
-    transform: rotate(-45deg) translate(-4px, 4px);
+transform: rotate(-45deg) translate(-4px, 4px);
 }
 .mobille-menu.active .line2{
-    opacity: 0;
+opacity: 0;
 }
 .mobille-menu.active .line3{
-    transform: rotate(45deg) translate(-5px, -7px);
+transform: rotate(45deg) translate(-5px, -7px);
 }
