@@ -485,7 +485,6 @@ header{
     margin-left: 10px;
 }
 .img-princip{
-    background-color: red;
     height: 75vh;
     background-image: url('../img/meninaServico.jpg'); 
     z-index: 1;
