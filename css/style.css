@@ -19,6 +19,9 @@ body{
 background-color:rgb(226, 230, 233);
 overflow-x: hidden;
 }
+html{
+    overflow-x: hidden;
+}
 header{
 height: 9%;
 background-image: url('../img/');
