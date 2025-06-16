@@ -421,7 +421,7 @@ ul{
 }
 body{
     background-color: rgb(226, 230, 233);
-    
+    overflow-x: hidden;
 }
 header{
     height: 9%;
