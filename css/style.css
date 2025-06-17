@@ -1,3 +1,11 @@
+/*
+Mobile (até 767px)
+
+Tablet (768px a 1024px)
+
+PC (acima de 1024px)
+*/
+
 *{
     margin: 0;
     padding: 0;
@@ -17,10 +25,7 @@ margin: 0 auto;
 }
 body{
 background-color:rgb(226, 230, 233);
-overflow-x: hidden;
-}
-html{
-    overflow-x: hidden;
+
 }
 header{
 height: 9%;
@@ -421,7 +426,7 @@ ul{
 }
 body{
     background-color: rgb(226, 230, 233);
-    overflow-x: hidden;
+    
 }
 header{
     height: 9%;
@@ -431,6 +436,7 @@ header{
     background-color: black;
     border-radius: 0 0 150PX 0;
     display: flex;
+    
 }
 .logo img{
     position: relative;
@@ -441,11 +447,12 @@ header{
 .mobille-menu{
     display: block;
     position: relative;
-    left: 25vw;
+    left: 36vw;
     top: 20px;
     height: 27px;
     width: 36px;
-    cursor: pointer
+    cursor: pointer;
+    
 }
 .mobille-menu div{
     color: white;
@@ -453,16 +460,20 @@ header{
     height: 3px;
     margin: 4px;
     background-color: white;
+    
 }
 .nav-list{
+    display: none;
     position: absolute;
     top: 10px;
-    left: 100%;
+    right:0 ;
     background-color: black;
     height: 80vh;
     width: 180px;
     border-radius: 830px 0 0 0;
-    
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 999;
 }
 .nav-list ul{
     position: relative;
@@ -488,10 +499,15 @@ header{
     height: 75vh;
     background-image: url('../img/meninaServico.jpg'); 
     z-index: 1;
+    border: 1px solid black;
+    width: 110.7%;
     background-size: cover;
 }
+main{
+    width: 90%;
+}
 .sect-conteudo{
-    width: 100%;
+    width: 100% !important;
 }
 .conteudo{
     margin-top: 20px;
@@ -514,7 +530,7 @@ header{
 .caixas-servicos{
     display: flex;
     gap: 16px;
-    width: 100%;
+    width: 106%;
     flex-wrap: wrap;
     align-items: stretch;
 }
@@ -556,7 +572,7 @@ header{
     
 }
 .caixas-publico p{
-    max-width: 50%;
+    max-width: 60%;
 }
 .caixa-servicos p, .caixa-publico p{
     padding: 5px;
@@ -568,7 +584,7 @@ header{
     background-color: black;
     color: white;
     padding-bottom: 30px;
-    width: 100%;
+    width: 110.8%;
     margin-left: -20px;
 }
 .publico-alvo h1{
@@ -598,9 +614,7 @@ header{
     text-align: center;
     box-sizing: border-box;
 }
-.caixa-publico{
-   
-}
+
 .caixa-publico{        
     width: 40%;
     margin: 15px;        
@@ -609,6 +623,7 @@ header{
 .principio{
     background-color: black;
     height: 300px;
+    width: 110.8%;
     margin-top: 25px;
     margin-left: -20px;
 }
@@ -617,14 +632,9 @@ header{
     background-color: rgba(228, 140, 32, 0.699);
     height: 100%;
     margin-left: -20px;
+    width: 104.2% !important;
 }
-.item-principios{
-    display: inline-block;
-    background-color: black;
-    width: 40%;
-    height: 160px;
-    margin-top: 40px;
-}
+
 .fundo-principio h1{ 
     padding-top: 30px;
 }
@@ -677,7 +687,7 @@ header{
     background-color: white;
 }
 .nav-list.active{
-    transform: translatex(-160px);
+    transform: translatex(0);
 }
 .active {
     display: block;
@@ -775,4 +785,7 @@ opacity: 0;
 }
 .mobille-menu.active .line3{
 transform: rotate(45deg) translate(-5px, -7px);
+}
+.nav-list.active{
+/*transform: translatex(-160px);*/
 }
