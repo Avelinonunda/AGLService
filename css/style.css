@@ -702,8 +702,12 @@ main{
     display: block;
 }
 /*SOBRE*/
+.main-sobre{
+    width: 100%;
+}
 .sobre-contain{
     text-align: center;
+    width: 100%;
     margin: 0 auto;
     background-color: white;
     border-radius: 0 130px 0px 0px;
@@ -725,7 +729,7 @@ main{
     margin-left: 30px;
 }
 .sobre-contain img{
-    width: 400px;
+    width: 80%;
     border-radius: 100px 0px 50px 0px;
     margin-bottom: 20px;
     margin-left: 10px;
