@@ -411,7 +411,6 @@ text-align: center;
 
 @media (max-width:480px) {
     .mobille-menu{
-        display: block;
         position: relative;
         left: 20vw;
         top: 20px;
