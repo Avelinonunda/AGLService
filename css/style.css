@@ -408,6 +408,19 @@ text-align: center;
     letter-spacing: 1px;
 }
 }
+
+@media (max-width:480px) {
+    .mobille-menu{
+        display: block;
+        position: relative;
+        left: 20vw;
+        top: 20px;
+        height: 27px;
+        width: 36px;
+        cursor: pointer;
+        
+    }
+}
 /*Mobile*/
 @media (max-width:768px) {
 *{
@@ -646,7 +659,7 @@ main{
     margin-top: 5px;
     margin-bottom: 10px;
 }
-.slider-container {
+.slider-container{
     position: relative;
     width: 300px;
     height: 180px;
@@ -725,7 +738,6 @@ main{
     position: relative;
     top: 0vh;
     left: 0 !important;
-
     max-width: 400px;
     margin: auto;
 }
