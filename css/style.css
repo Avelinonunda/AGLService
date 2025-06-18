@@ -9,6 +9,7 @@ PC (acima de 1024px)
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 @font-face {
 font-family:'FontSobre' ;
@@ -23,8 +24,10 @@ list-style: none;
 hr{
 margin: 0 auto;
 }
-body{
-background-color:rgb(226, 230, 233);
+html,body{
+    width: 100%;
+    border: 1px solid red;
+    background-color:rgb(226, 230, 233);
 
 }
 header{
@@ -186,6 +189,8 @@ margin: 0 auto;
 flex-wrap: wrap;
 text-align: center;
 box-sizing: border-box;
+
+border: 1px solid black;
 }
 .caixa-publico{
 align-items: stretch;
@@ -507,11 +512,11 @@ header{
     background-image: url('../img/meninaServico.jpg'); 
     z-index: 1;
     border: 1px solid black;
-    width: 110.7%;
+    width: 100%;
     background-size: cover;
 }
 main{
-    width: 90%;
+    width: 100%;
 }
 .sect-conteudo{
     width: 100% !important;
@@ -537,7 +542,7 @@ main{
 .caixas-servicos{
     display: flex;
     gap: 16px;
-    width: 106%;
+    width: 100%;
     flex-wrap: wrap;
     align-items: stretch;
 }
@@ -590,8 +595,9 @@ main{
     background-color: black;
     color: white;
     padding-bottom: 30px;
-    width: 110.8%;
+    width: 100%;
     margin-left: -20px;
+    border:  1px solid;
 }
 .publico-alvo h1{
     text-align: center;
@@ -619,6 +625,7 @@ main{
     margin: 0 auto;
     text-align: center;
     box-sizing: border-box;
+    
 }
 
 .caixa-publico{  
@@ -630,7 +637,7 @@ main{
 .principio{
     background-color: black;
     height: 300px;
-    width: 110.8%;
+    width: 100%;
     margin-top: 25px;
     margin-left: -20px;
 }
