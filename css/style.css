@@ -26,7 +26,6 @@ margin: 0 auto;
 }
 html,body{
     width: 100%;
-    border: 1px solid red;
     background-color:rgb(226, 230, 233);
 
 }
@@ -542,7 +541,8 @@ main{
 .caixas-servicos{
     display: flex;
     gap: 16px;
-    width: 100%;
+    width: 105%;
+    margin-left: px;
     flex-wrap: wrap;
     align-items: stretch;
 }
@@ -595,8 +595,8 @@ main{
     background-color: black;
     color: white;
     padding-bottom: 30px;
-    width: 100%;
-    margin-left: -20px;
+    width: 110.5%;
+    margin-left: -21px;
     border:  1px solid;
 }
 .publico-alvo h1{
@@ -637,7 +637,7 @@ main{
 .principio{
     background-color: black;
     height: 300px;
-    width: 100%;
+    width: 109.8%;
     margin-top: 25px;
     margin-left: -20px;
 }
@@ -646,7 +646,7 @@ main{
     background-color: rgba(228, 140, 32, 0.699);
     height: 100%;
     margin-left: -20px;
-    width: 104.6% !important;
+    width: 104.7% !important;
 }
 
 .fundo-principio h1{ 
