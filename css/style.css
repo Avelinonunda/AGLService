@@ -595,7 +595,7 @@ main{
     background-color: black;
     color: white;
     padding-bottom: 30px;
-    width: 110.5%;
+    width: 113%;
     margin-left: -21px;
     border:  1px solid;
 }
@@ -637,7 +637,7 @@ main{
 .principio{
     background-color: black;
     height: 300px;
-    width: 109.8%;
+    width: 112.5%;
     margin-top: 25px;
     margin-left: -20px;
 }
@@ -646,7 +646,7 @@ main{
     background-color: rgba(228, 140, 32, 0.699);
     height: 100%;
     margin-left: -20px;
-    width: 104.7% !important;
+    width: 105.5% !important;
 }
 
 .fundo-principio h1{ 
