@@ -638,7 +638,7 @@ main{
     width: 40%;
     margin: 15px;*/
     flex: 1 1 40%;
-    min-width: 140px;
+    min-width: 144px;
     max-width: 145px;
     box-sizing: border-box;
     padding: 10px;
